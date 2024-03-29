@@ -19,11 +19,11 @@ watch(() => showMenuOverlay.value, (val) => {
           class="hamburger-pc"
       >
         <div class="hamburger-btn">
-          <div style="width:100%" class="hamburger-bar"></div>
-          <div data-w-id="e3dcd376-b009-6fd2-7146-503bc15f8ec2" style="width:50%" class="hamburger-bar middle"></div>
-          <div style="width:100%" class="hamburger-bar"></div>
+          <div class="hamburger-bar"></div>
+          <div data-w-id="e3dcd376-b009-6fd2-7146-503bc15f8ec2" class="hamburger-bar middle"></div>
+          <div class="hamburger-bar"></div>
         </div>
-        <div style="color:rgb(238,43,74)" class="hamburger-label">
+        <div class="hamburger-label">
           <p class="hamburger-label-text">More</p>
         </div>
       </div>
@@ -60,6 +60,34 @@ watch(() => showMenuOverlay.value, (val) => {
   left: 30px;
   right: auto;
 }
+.hamburger-label {
+  flex: none;
+  color: var(--primary);
+  transition: .3s ease-in-out all;
+}
+
+.hamburger-label-text {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.hamburger-pc .hamburger-bar{
+  width: 100%;
+  transition: .3s ease-in-out all;
+}
+.hamburger-pc .hamburger-bar.middle{
+  width: 50%;
+}
+.hamburger-pc:hover .hamburger-bar{
+  width: 50%;
+}
+.hamburger-pc:hover .hamburger-bar.middle{
+  width: 100%;
+}
+.hamburger-pc:hover .hamburger-label{
+  color: var(--ternary);
+}
 
 .hamburger-btn {
   flex-flow: column;
@@ -78,22 +106,6 @@ watch(() => showMenuOverlay.value, (val) => {
   background-color: var(--primary);
   flex: none;
   height: 2px;
-}
-
-.hamburger-bar.middle {
-  cursor: auto;
-  width: 50%;
-}
-
-.hamburger-label {
-  flex: none;
-}
-
-.hamburger-label-text {
-  text-transform: uppercase;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 .logo {
