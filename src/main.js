@@ -5,6 +5,12 @@ import './styles/tailwind.css'
 import './styles/main.css'
 import './styles/responsive.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    duration: 600
+});
+
 import router from "@/router/index.js";
 
 createApp(App)
