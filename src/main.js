@@ -8,8 +8,7 @@ import './styles/responsive.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-    duration: 600,
-    offset: 70
+    duration: 600
 });
 
 import router from "@/router/index.js";
