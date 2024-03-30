@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: var(--secondary);
@@ -88,6 +92,7 @@ body {
   color: var(--primary);
   font-family: Canopee, sans-serif;
   font-size: var(--section-heading-lg);
+  line-height: 42px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;

@@ -33,10 +33,10 @@ defineProps({
 
 <style scoped>
 .section-subheading {
-  margin-top: 10px;
   margin-bottom: 0;
   font-family: Canopee, sans-serif;
   font-size: 31px;
+  line-height: 40px;
   font-weight: 400;
 }
 

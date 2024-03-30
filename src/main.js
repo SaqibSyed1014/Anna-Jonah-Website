@@ -8,8 +8,11 @@ import './styles/responsive.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-    duration: 600
+    duration: 800
 });
+window.addEventListener('scroll', () => {
+    AOS.refresh()
+})
 
 import router from "@/router/index.js";
 
