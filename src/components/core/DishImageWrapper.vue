@@ -17,24 +17,5 @@ defineProps({
 </template>
 
 <style scoped>
-.menu-dishes {
-  justify-content: center;
-  align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-}
 
-.dishes-image-wrapper {
-  text-align: center;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-
-.menu-dishes.top-margin {
-  margin-top: 65px;
-}
 </style>
