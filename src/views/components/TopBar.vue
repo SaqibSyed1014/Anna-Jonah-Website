@@ -108,22 +108,4 @@ watch(() => showMenuOverlay.value, (val) => {
   height: 2px;
 }
 
-.logo {
-  justify-content: center;
-  width: 100%;
-  display: flex;
-  position: absolute;
-  top: 10px;
-}
-
-.logo-wrapper {
-  flex: none;
-  width: 129px;
-  height: 68px;
-}
-
-
-.cta {
-  display: none;
-}
 </style>

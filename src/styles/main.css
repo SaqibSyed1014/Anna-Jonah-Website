@@ -104,6 +104,25 @@ body {
   margin-top: 65px;
 }
 
+.logo {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 10px;
+}
+
+.logo-wrapper {
+  flex: none;
+  width: 129px;
+  height: 68px;
+}
+
+
+.cta {
+  display: none;
+}
+
 .paragraph {
   font-size: var(--section-text-lg);
   max-width: 500px;
