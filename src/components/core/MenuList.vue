@@ -17,8 +17,8 @@ defineProps({
       </h3>
     </div>
     <div class="menu-table">
-        <div class="menu-table-row" data-aos="fade-up" v-for="row in tableData.length / 2" :key="row">
-          <div class="menu-table-cell" v-for="(data, index) in tableData.slice(row * 2 - 2, row * 2)" :key="index">
+        <div class="menu-table-row" v-for="row in tableData.length / 2" :key="row">
+          <div class="menu-table-cell" data-aos="fade-up" v-for="(data, index) in tableData.slice(row * 2 - 2, row * 2)" :key="index">
             <div class="menu-table-item">
               <div class="text-block">{{ data.name }}</div>
               <div class="item-line"></div>
